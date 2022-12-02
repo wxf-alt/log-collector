@@ -77,7 +77,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.atguigu.appclient.AppMain</mainClass>
+                            <mainClass>appclient.AppMain</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
