@@ -10,11 +10,37 @@
 
     <!--版本号统一-->
     <properties>
+        <project.build.sourceEncoding>UTF8</project.build.sourceEncoding>
+        <hive.version>1.2.1</hive.version>
+        <flume.version>1.7.0</flume.version>
         <slf4j.version>1.7.20</slf4j.version>
         <logback.version>1.0.7</logback.version>
     </properties>
 
     <dependencies>
+
+        <!--        添加 Kylin 依赖-->
+        <dependency>
+            <groupId>org.apache.kylin</groupId>
+            <artifactId>kylin-jdbc</artifactId>
+            <version>2.5.1</version>
+        </dependency>
+
+        <!--        添加 Flume 依赖-->
+        <dependency>
+            <groupId>org.apache.flume</groupId>
+            <artifactId>flume-ng-core</artifactId>
+            <version>${flume.version}</version>
+        </dependency>
+
+        <!--        添加 Hive 依赖 用来自定义函数-->
+        <dependency>
+            <groupId>org.apache.hive</groupId>
+            <artifactId>hive-exec</artifactId>
+            <version>${hive.version}</version>
+        </dependency>
+
+
         <!--    解析 Json的框架  Gson    JackSon    FastJson    -->
         <!--    阿里巴巴开源json解析框架  -->
         <dependency>
